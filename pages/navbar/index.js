@@ -7,8 +7,8 @@ export default function Navbar() {
     <>
       <nav>
         <Link href="/">Discover</Link>
-        <Link href="/info/index">Info</Link>
-        <Link href="/profile/index">Profile</Link>
+        <Link href="/info">Info</Link>
+        <Link href="/profile">Profile</Link>
       </nav>
     </>
   );

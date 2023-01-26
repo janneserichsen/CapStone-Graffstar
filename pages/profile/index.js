@@ -1,3 +1,5 @@
+import Navbar from "../navbar";
+
 export default function Profile() {
   return (
     <>
@@ -15,6 +17,7 @@ export default function Profile() {
         </style>
         <h1>Graffstar</h1>
       </section>
+      <Navbar />
     </>
   );
 }

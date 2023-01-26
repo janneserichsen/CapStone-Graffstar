@@ -56,6 +56,18 @@ const users = [
     email: "SRF@example.com",
     image: "www-image.url.de",
   },
+  {
+    id: "u-318Lcid",
+    name: "wear",
+    email: "wear@example.com",
+    image: "www-image.url.de",
+  },
+  {
+    id: "u-318Lciad",
+    name: "Asie",
+    email: "Asie@example.com",
+    image: "www-image.url.de",
+  },
 ];
 
 const graffitiPosts = [
@@ -107,6 +119,27 @@ const graffitiPosts = [
     userID: "u-318Lci",
     location: "Itzehoe",
     image: "/images/wear-alsen.png",
+    comment: "#Long live Alsen",
+  },
+  {
+    id: "g-318Lcid",
+    userID: "u-318Lci",
+    location: "Itzehoe",
+    image: "/images/wear-image.png",
+    comment: "#Long live Alsen",
+  },
+  {
+    id: "g-318Lcidad",
+    userID: "u-318Lciad",
+    location: "Itzehoe",
+    image: "/images/asie-wagon.png",
+    comment: "#Long live Alsen",
+  },
+  {
+    id: "g-318Lcidaded",
+    userID: "u-318Lciad",
+    location: "Itzehoe",
+    image: "/images/asie-wall.png",
     comment: "#Long live Alsen",
   },
 ];

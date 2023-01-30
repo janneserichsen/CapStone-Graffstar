@@ -1,4 +1,4 @@
-import GlobalStyle from "pages/styles/GlobalStyle";
+import GlobalStyle from "styles";
 import Head from "next/head";
 
 export default function App({ Component, pageProps: { pageProps } }) {

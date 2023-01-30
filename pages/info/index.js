@@ -58,6 +58,9 @@ export default function infoPage() {
         <li>Skore 79</li>
         <li>Grab</li>
         <li>MTO</li>
+        <li>Moses</li>
+        <li>1 UP</li>
+        <li>NHS Crew</li>
       </ul>
       <h3>USA</h3>
       <ul>

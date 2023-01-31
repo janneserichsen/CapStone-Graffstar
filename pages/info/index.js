@@ -1,4 +1,3 @@
-import ButtonExample from "../buttonexample";
 import Navbar from "../navbar";
 
 export default function infoPage() {
@@ -58,6 +57,9 @@ export default function infoPage() {
         <li>Skore 79</li>
         <li>Grab</li>
         <li>MTO</li>
+        <li>Moses</li>
+        <li>1 UP</li>
+        <li>NHS Crew</li>
       </ul>
       <h3>USA</h3>
       <ul>
@@ -79,9 +81,9 @@ export default function infoPage() {
       </ul>
       <section>
         <h3>Try out some cool Color Combis</h3>
-        <ButtonExample />
+
         <p>Filling</p>
-        <ButtonExample />
+
         <p>Outline</p>
       </section>
 

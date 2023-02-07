@@ -1,5 +1,4 @@
 import { createGlobalStyle } from "styled-components";
-import Link from "next/link";
 
 export default createGlobalStyle`
   *,
@@ -42,14 +41,11 @@ export default createGlobalStyle`
     font-size: 1.2em;
     background-color:  #FBEAEB;
     color: #2F3C7E;
-    border: none;
+    border: 2px solid lightblue;
+    border-radius: 3px;
   }
 
-  nav {
-    border: 2px groove black;
-    border-radius: 4px;
-    text-align: center;
-  }
+
 
 
   h3 {

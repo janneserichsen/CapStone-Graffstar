@@ -2,6 +2,25 @@ import Image from "next/image";
 import { useState } from "react";
 import List from "./List";
 import Form from "./Form";
+import styled from "styled-components";
+
+const Picture = styled(Image)`
+  border: 3px solid black;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+`;
+
+const StyledList = styled(List)`
+  text-align: center;
+  font-size: 1.4em;
+  color: #2f3c7e;
+  text-decoration: none;
+`;
+
+const StyledForm = styled(Form)`
+  text-align: center;
+`;
 
 const users = [
   {
@@ -208,28 +227,17 @@ export default function Graffitis() {
             <section key={graffiti.id}>
               <h2>Post by {currentUser.name}</h2>
               <p>Location: {graffiti.location}</p>
-              <div
-                style={{
-                  display: "flex",
-                  justifyContent: "center",
-                }}
-              >
-                <Image
-                  src={graffiti.image}
-                  alt={`Graffiti from ${currentUser.name}`}
-                  width={250}
-                  height={250}
-                />
-              </div>
-              <section
-                style={{
-                  textAlign: "center",
-                  fontSize: "1.2em",
-                }}
-              >
-                <Form onSubmit={handleAddTag} />
-                <List comments={graffiti.comments} />
-              </section>
+
+              <Picture
+                src={graffiti.image}
+                alt={`Graffiti from ${currentUser.name}`}
+                width={250}
+                height={250}
+              />
+            </section>
+            <section>
+              <StyledForm onSubmit={handleAddTag} />
+              <StyledList comments={graffiti.comments} />
             </section>
           </>
         );

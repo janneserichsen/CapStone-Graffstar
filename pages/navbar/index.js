@@ -1,51 +1,32 @@
-import Image from "next/image";
-import styles from "@/styles";
 import Link from "next/link";
+import styled from "styled-components";
+
+const StyledLink = styled(Link)`
+  text-decoration: none;
+  color: #2f3c7e;
+  font-size: 1.5em;
+`;
+
+const StyledNav = styled.nav`
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background-color: lightblue;
+  border: 2px groove black;
+  border-radius: 4px;
+  text-align: center;
+`;
 
 export default function Navbar() {
   return (
     <>
-      <nav
-        style={{
-          position: "fixed",
-          bottom: 0,
-          left: 0,
-          right: 0,
-          height: "50px",
-          backgroundColor: "lightblue",
-        }}
-      >
-        <Link
-          href="/"
-          style={{
-            textDecoration: "none",
-            color: "#2F3C7E",
-            fontSize: 30,
-          }}
-        >
-          Discover
-        </Link>
-        <Link
-          href="/info"
-          style={{
-            textDecoration: "none",
-            color: "#2F3C7E",
-            fontSize: 30,
-          }}
-        >
-          Info
-        </Link>
-        <Link
-          href="/profile"
-          style={{
-            textDecoration: "none",
-            color: "#2F3C7E",
-            fontSize: 30,
-          }}
-        >
-          Profile
-        </Link>
-      </nav>
+      <StyledNav>
+        <StyledLink href="/">Discover</StyledLink>
+        <StyledLink href="/info">Info</StyledLink>
+        <StyledLink href="/profile">Profile</StyledLink>
+      </StyledNav>
     </>
   );
 }

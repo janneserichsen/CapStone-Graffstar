@@ -11,7 +11,7 @@ export default function Form({ onSubmit }) {
   }
 
   return (
-    <form className="form" onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit}>
       <h2>Add Comment</h2>
       <div className="form__fields">
         <div className="form__field">

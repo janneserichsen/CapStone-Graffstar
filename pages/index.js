@@ -1,5 +1,5 @@
 import Navbar from "./navbar";
-import Graffitis from "@/components/comment/Graffitipost";
+import Graffitis from "@/components/Graffitipost";
 
 export default function DiscoverPage() {
   return (

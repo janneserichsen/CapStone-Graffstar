@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { useState } from "react";
 import List from "./List";
-import Form from "./Form";
 import styled from "styled-components";
+import Form from "./Form";
 
 const Picture = styled(Image)`
   border: 3px solid black;

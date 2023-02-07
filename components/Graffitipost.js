@@ -11,17 +11,6 @@ const Picture = styled(Image)`
   margin-right: auto;
 `;
 
-const StyledList = styled(List)`
-  text-align: center;
-  font-size: 1.4em;
-  color: #2f3c7e;
-  text-decoration: none;
-`;
-
-const StyledForm = styled(Form)`
-  text-align: center;
-`;
-
 const users = [
   {
     id: "u-213Lbc",
@@ -209,8 +198,6 @@ const graffitiPosts = [
   },
 ];
 
-const comments = [];
-
 export default function Graffitis() {
   const [tags, setTags] = useState([]);
 
@@ -236,8 +223,8 @@ export default function Graffitis() {
               />
             </section>
             <section>
-              <StyledForm onSubmit={handleAddTag} />
-              <StyledList comments={graffiti.comments} />
+              <Form onSubmit={handleAddTag} />
+              <List comments={graffiti.comments} />
             </section>
           </>
         );

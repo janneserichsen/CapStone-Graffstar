@@ -28,9 +28,7 @@ export default createGlobalStyle`
     text-align: center;
     font-size: 3.5em;
   }
-  Image {
-    justify-content: center;
-  }
+
   
   p {
     font-size: 1.4em;

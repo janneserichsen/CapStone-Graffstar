@@ -16,13 +16,7 @@ export default function Form({ onSubmit }) {
       <div className="form__fields">
         <div className="form__field">
           <label htmlFor="tag" className="form__label"></label>
-          <input
-            id="tag"
-            type="text"
-            name="tag"
-            className="form__input"
-            required
-          />
+          <input id="tag" type="text" name="tag" required />
         </div>
         <button type="submit" className="form__button">
           Add

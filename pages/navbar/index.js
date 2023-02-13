@@ -22,7 +22,7 @@ const StyledNav = styled.nav`
 export default function Navbar() {
   return (
     <StyledNav>
-      <StyledLink href="/">Discover</StyledLink>
+      <StyledLink href="/discover">Discover</StyledLink>
       <StyledLink href="/info">Info</StyledLink>
       <StyledLink href="/profile">Profile</StyledLink>
     </StyledNav>

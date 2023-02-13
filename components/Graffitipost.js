@@ -1,8 +1,7 @@
 import Image from "next/image";
 import { useState } from "react";
-import List from "./List";
 import styled from "styled-components";
-import Form from "./Form";
+import Link from "next/link";
 
 const Picture = styled(Image)`
   border: 3px solid black;
@@ -81,120 +80,60 @@ const graffitiPosts = [
     userID: "u-213Lbc",
     location: "Copenhagen",
     image: "/images/bates-truck.png",
-    comments: [
-      {
-        comment: "Still rolling thru Town",
-        graffitiPostId: "u-213Lbc",
-      },
-    ],
   },
   {
     id: "g-1234",
     userID: "u-030Lbc",
     location: "Berlin",
     image: "/images/gms-train.png",
-    comments: [
-      {
-        comment: "Fuck DB",
-        graffitiPostId: "u-030Lbc",
-      },
-    ],
   },
   {
     id: "g-12",
     userID: "u-213Lbc",
     location: "Hamburg",
     image: "/images/bates-wall.png",
-    comments: [
-      {
-        comment: "Still standing",
-        graffitiPostId: "u-213Lbc",
-      },
-    ],
   },
   {
     id: "g-040Lba",
     userID: "u-040Lbc",
     location: "Hamburg",
     image: "/images/srf-crew.png",
-    comments: [
-      {
-        comment: "SRF for Life",
-        graffitiPostId: "u-040Lbc",
-      },
-    ],
   },
   {
     id: "g-040Lbc",
     userID: "u-040Lbc",
     location: "Hamburg",
     image: "/images/emra.png",
-    comments: [
-      {
-        comment: "SRFFFF",
-        graffitiPostId: "g-040Lbc",
-      },
-    ],
   },
   {
     id: "g-318Lca",
     userID: "u-318Lca",
     location: "Itzehoe",
     image: "/images/quer.png",
-    comments: [
-      {
-        comment: "Yooo where is that",
-        graffitiPostId: "u-318Lca",
-      },
-    ],
   },
   {
     id: "g-318Lci",
     userID: "u-318Lci",
     location: "Itzehoe",
     image: "/images/wear-alsen.png",
-    comments: [
-      {
-        comment: "Yooo nice Piece",
-        graffitiPostId: "u-318Lci",
-      },
-    ],
   },
   {
     id: "g-318Lcid",
     userID: "u-318Lci",
     location: "Itzehoe",
     image: "/images/wear-image.png",
-    comments: [
-      {
-        comment: "Bro Killing it",
-        graffitiPostId: "u-318Lci",
-      },
-    ],
   },
   {
     id: "g-318Lcidad",
     userID: "u-318Lciad",
     location: "Itzehoe",
     image: "/images/asie-wagon.png",
-    comments: [
-      {
-        comment: "Looks Hella Good",
-        graffitiPostId: "u-318Lci",
-      },
-    ],
   },
   {
     id: "g-318Lcidaded",
     userID: "u-318Lciad",
     location: "Itzehoe",
     image: "/images/asie-wall.png",
-    comments: [
-      {
-        comment: "Looks Fire",
-        graffitiPostId: "u-318Lciad",
-      },
-    ],
   },
 ];
 
@@ -206,6 +145,8 @@ export default function Graffitis() {
   }
   return (
     <>
+      <Link href="/createPost">create Post</Link>
+
       {graffitiPosts.map((graffiti) => {
         const currentUser = users.find((user) => user.id === graffiti.userID);
 
@@ -221,10 +162,6 @@ export default function Graffitis() {
                 width={250}
                 height={250}
               />
-            </section>
-            <section>
-              <Form onSubmit={handleAddTag} />
-              <List comments={graffiti.comments} />
             </section>
           </>
         );
